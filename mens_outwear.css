@@ -1,0 +1,138 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mens-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.mens-title > h1{
+    margin: 0.5rem;
+    color: #202020;
+    font-size: 14.3px;
+}
+
+.mens-title > span{
+    color: #757575;
+   
+}
+
+.mens_wear_display{
+    display: none;
+}
+
+
+.dresses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    align-self: stretch;
+    /* margin: 0 auto; */
+    justify-content: space-around;
+    /* margin:0 0.5rem; */
+    width: 100vw;
+    gap:1rem 0;
+}
+
+
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid pink; */
+    /* width: 45vw; */
+   text-align: center;
+    row-gap: 1rem;
+    /* margin: 0 1rem; */
+    /* padding: 1rem; */
+    cursor: pointer;
+    width: 50vw;
+}
+
+.hoodie-image{
+    
+    object-fit: fill;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 1rem;
+}
+
+.item > .title{
+    font-weight: bold;
+    color: #202020;
+    font-size: 13px;
+}
+
+.cost{
+    color: #757575;
+    font-size: 13px;
+
+}
+
+
+
+
+
+@media (min-width:768px) {
+
+
+        .menu-icon{
+            display: none;
+        }
+    
+      nav {
+        display: flex;
+      }
+    
+      nav > a:first-child{
+        padding-bottom: 1rem;
+        border-bottom: 2px solid black;
+      }
+  
+
+    .mens_wear_display{
+        display: flex;
+        min-height: 320px;
+        object-fit: cover;
+    }
+    main{
+        margin: 0 auto;
+    }
+    .dresses{
+       row-gap: 2rem;
+        max-width: 1440px;
+        justify-content: flex-start;
+        /* align-items: flex-start; */
+    }
+    li{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item{
+        width: 65%;
+    }
+    .hoodie-image{
+        width: 100%;
+        margin-bottom: 3rem ;
+    }
+
+
+    .mens-title > h1{
+        margin-top: 1.5rem;
+        color: #202020;
+        font-size: 14.3px;
+    }
+    
+    
+}
