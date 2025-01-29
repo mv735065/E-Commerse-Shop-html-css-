@@ -10,4 +10,9 @@ body{
     justify-content: space-between;
     margin: 1.5rem;
     font-weight: bold;
+    font-size:medium;
+}
+
+.menu-icon{
+    display: block;
 }
