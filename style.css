@@ -1,0 +1,95 @@
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+nav {
+  display: none;
+  justify-content: center;
+  gap: 0 1rem;
+  font-size: 13px;
+  margin: 2rem 0;
+}
+
+.collection-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection-images {
+  cursor: pointer;
+  /* max-width: 100vw; */
+}
+
+.collection-images > img {
+  /* width: 100%; */
+  height: 25vh;
+  object-fit: cover; /* Crop edges instead of shrinking */
+  object-position: center;
+  display: block;
+}
+
+.collection-description {
+  margin: 1.5rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.Tshirts-collection {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+}
+
+.shop-now {
+  border: 2px solid black;
+  padding: 8px 44px;
+  cursor: pointer;
+}
+
+footer .demo {
+  padding: 0.5rem 2.5rem;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  nav {
+    display: flex;
+  }
+
+  .collection-images > img {
+    width: auto;
+    min-height: 40vh;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav {
+    display: flex;
+  }
+
+  main {
+    overflow: hidden;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  section {
+    margin: 0 auto;
+  }
+
+  .collection-images > img {
+    min-height: 35vh;
+  }
+  
+}

@@ -1,0 +1,13 @@
+
+body{
+    font-family: 'Roboto', 'Noto Sans', sans-serif;
+
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem;
+    font-weight: bold;
+}
