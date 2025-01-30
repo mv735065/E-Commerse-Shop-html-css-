@@ -1,0 +1,180 @@
+html{
+    font-size: 13px;
+}
+
+input{
+    appearance: auto;
+}
+h2{
+    font-weight: bold;
+}
+
+footer{
+    display: none;
+}
+span{
+    color: hsl(0, 0%, 80%);
+}
+
+/* #year::before{
+     content: Year;
+     color: red;
+} */
+main{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    position: relative;
+    /* overflow: hidden; */
+}
+.checkout{
+    text-align: center;
+}
+
+.checkout > h1{
+padding-bottom:1rem;
+}
+
+
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.Account,.shipping{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+input{
+    padding: 0.5rem;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.shipping .state-zip{
+    display: flex;
+    /* justify-content: space-between; */
+    gap:1rem
+
+}
+
+.state-zip>*{
+   flex: 1 1 45%;
+
+}
+
+select{
+    appearance: auto;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.country{
+    display: flex;
+    flex-direction: column;
+}
+
+.Billng{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.card-expiry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card-expiry >*{
+    flex: 1 1 25%;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+
+}
+.summary>h2{
+    padding:0.5rem 0;
+}
+.summary >div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+.place-order{
+   
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    /* width: 100vw; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+@media (min-width:768px) {
+
+    .checkout{
+        margin-top: 15vh;
+        margin-bottom: 2rem;
+    }
+
+   main{
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: row;
+    max-width:900px;
+    gap:4rem
+   }
+
+   footer{
+    display: flex;
+   }
+
+   /* .information > .checkout{
+    width: 100vw;
+   } */
+  .information{
+    flex: 1 1 50%;
+  }  
+  .payment{
+    flex:1 1 50%;
+  }
+
+  .place-order{
+    position: static;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border: 2px solid;
+    background-color: white;
+    color: black;
+  }
+
+  .total{
+    margin:0;
+  }
+
+}
