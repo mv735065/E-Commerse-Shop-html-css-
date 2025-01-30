@@ -2,12 +2,21 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
+  width: auto;
   row-gap: 2rem;
+  overflow: hidden;
+  justify-content: space-between;
 }
+
+
 
 .image {
   width: 80%;
+  object-fit: cover;
+}
+img{
+  width: 100%;
 }
 
 h1 {
@@ -18,12 +27,20 @@ h1 {
   color: #757575;
 }
 
+.second-half{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
 .information {
-  width: 90%;
+  width: 80%;
   text-align: start;
   display: flex;
   flex-direction: column;
   gap: 2rem 1rem;
+  margin: 0 auto;
 }
 
 select {
@@ -46,25 +63,115 @@ select {
   padding: 1rem 0;
 }
 
-h2 {
-  font-weight: bold;
-}
 
 .information > p {
-  text-align: start;
   text-overflow: ellipsis;
   color: #757575;
   font-size: 13px;
+  text-align: justify;
+  margin-bottom: 20vh;
 }
 
 .options label {
   color: #757575;
 }
 
-footer{
-    position:stickyl;
-    bottom: 0;
-    
-
-
+.Add-to-cart {
+  padding: 1.5rem;
+  background-color: #172c50;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
 }
+
+footer {
+  display: none;
+}
+/* 
+@media (min-width:768px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 2px solid red;
+
+  }
+  main{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: flex-start;
+    height: 100vh;
+    border: 2px solid black;
+    padding: 5vh 0;
+
+  }
+
+  
+
+
+  .second-half{
+    width: 50%;
+    flex: 1 1 45%;
+    border: 2px solid red;
+
+  }
+
+  .image{
+    
+    flex: 1 1 55%;
+   
+    width: 100%;
+    max-height: 80vh;
+    border: 2px solid red;
+    overflow: hidden;
+    position: relative;
+
+  }
+img{
+  width: 80%;
+  max-height: 1440px;
+  object-fit: contain;
+  border: 2px solid ;
+  padding:10%;
+  position: relative;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+}
+  footer{
+    display: flex;
+    align-self:center;
+  
+    border: 2px solid red;
+    
+   
+  }
+
+  .information >p{
+    margin: 0;
+  }
+
+  .Add-to-cart{
+   position: static;
+    width: 2rem;
+    padding:0.5rem  2rem;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+   
+    width: max-content;
+   
+  }
+nav{
+  display: flex;
+}
+
+ 
+  
+} */
