@@ -66,6 +66,7 @@ main {
 
   .collection-images > img {
     min-height: 35vh;
+    width: 100vw;
   }
 }
 
@@ -90,6 +91,7 @@ main {
 
   .collection-images > img {
     min-height: 35vh;
+   
   }
   
 }

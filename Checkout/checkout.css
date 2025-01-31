@@ -1,0 +1,192 @@
+h2 {
+  font-weight: bold;
+}
+
+footer {
+  display: none;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+}
+.input > input {
+  width: 100%;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+.input > label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  transition: 0.3s ease all;
+  color: hsl(0, 0%, 80%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+input:focus {
+  border-bottom: 1px solid black;
+}
+
+input:focus + label {
+  transform: translateY(-2rem);
+  font-size: 13px;
+  color: black;
+}
+
+main {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.checkout {
+  text-align: center;
+}
+
+.checkout > h1 {
+  padding-bottom: 1rem;
+  font-size: 16px;
+}
+
+.checkout > span,
+.country > span {
+  color: hsl(0, 0%, 80%);
+}
+
+.information,
+.Account,
+.shipping,
+.payment,
+.Billng-address {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.shipping .state-zip , .Billng .state-zip{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+select {
+  appearance: auto;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.country > select {
+  display: block;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.Billng ,.summary{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-expiry {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.card-expiry > * {
+  flex: 1 1 25%;
+}
+
+.summary {
+  gap: 1rem;
+}
+.summary > h2 {
+  padding: 0.5rem 0;
+}
+.summary > div ,.total{
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  margin-bottom: 20vh;
+}
+
+.place-order {
+  padding: 2rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.Billng-address {
+   display: none; 
+   flex-direction: column;
+
+}
+
+input:checked ~.Billng-address {
+  
+  display: flex ;
+  padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .checkout {
+    margin-top: 8vh;
+    margin-bottom: 2rem;
+  }
+
+  main {
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: row;
+    max-width: 900px;
+    gap: 5rem;
+  }
+
+  footer {
+    display: flex;
+  }
+  .information {
+    flex: 1 1 50%;
+  }
+  .payment {
+    flex: 1 1 50%;
+  }
+
+  .place-order {
+    position: static;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 0.5rem 3rem;
+    border: 2px solid;
+    background-color: white;
+    color: black;
+  }
+
+  .total {
+    margin: 0;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}

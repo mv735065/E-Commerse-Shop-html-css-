@@ -1,0 +1,130 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  row-gap: 2rem;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.image {
+  width: 80%;
+  object-fit: cover;
+}
+.image > img ,select {
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.cost {
+  color: #757575;
+}
+
+.information {
+  width: 80%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 1rem;
+  margin: 0 auto;
+}
+
+.inside-size-box,
+.inside-quantity-box {
+  display: flex;
+  column-gap: 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid hsl(0, 0%, 80%);
+}
+
+.inside-quantity-box {
+  column-gap: 2rem;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.information > p {
+  text-overflow: ellipsis;
+  color: #757575;
+  text-align: justify;
+  margin-bottom: 20vh;
+}
+
+.options label {
+  color: #757575;
+}
+
+.Add-to-cart {
+  padding: 1.5rem;
+  background-color: #172c50;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+footer {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    height: 100vh;
+    padding: 0 2rem;
+    align-items: flex-start;
+    max-width: 1440px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+
+  .Add-to-cart {
+    position: static;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+
+  .information {
+    flex: 0.75 0.75 50%;
+  }
+
+  .information > p,
+  .options {
+    max-width: 400px;
+  }
+
+  .image {
+    flex: 1.25 1.25 50%;
+    position: relative;
+  }
+
+  .information > p {
+    margin-bottom: 0;
+  }
+
+  footer,
+  nav {
+    display: flex;
+  }
+
+  .image > img {
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+  }
+  nav > a:first-child {
+    border-bottom: 2px solid black;
+  }
+}

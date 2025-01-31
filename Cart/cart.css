@@ -2,7 +2,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid; */
   padding: 0.5rem 1.5rem;
   color: #757575;
 }
@@ -12,16 +11,12 @@ footer {
 .products {
   display: flex;
   flex-direction: column;
-  /* width: 90%; */
   margin-top: 3rem;
-  /* border: 2px solid red; */
   width: 100%;
   gap: 2rem;
   overflow: hidden;
 }
-/* .your-cart{
-    margin: 2rem;
-} */
+
 .your-cart > h1 {
   margin-bottom: 1rem;
   color: black;
@@ -33,56 +28,42 @@ footer {
 }
 
 .item {
-  /* width: 100%; */
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  /* border: 2px solid; */
   position: relative;
   min-height: 4rem;
 }
 .item .descripton {
   display: flex;
   flex-direction: column;
-  /* width: 70%; */
-  /* border: 2px solid red; */
   width: 100%;
-  align-self: stretch;
   margin-left: 1rem;
-  justify-content: space-between;
-  /* padding: 1rem 0; */
 }
 .item .item-name {
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid; */
   flex: 1 1 100%;
   padding-top: 1rem;
-  /* color: black; */
   font-size: 13px;
 }
 
 .item .product-link {
   color: black;
   white-space: nowrap;
-  overflow: hidden; /* Hide any text that exceeds the container */
+  overflow: hidden; 
   text-overflow: ellipsis;
 }
 
 .item img {
   width: 5rem;
   height: 100%;
-  /* border: 2px solid red; */
-  /* margin: 1rem; */
   min-width: 2rem;
 }
 
 .item .picking-options {
   display: flex;
   flex-direction: row;
-  /* border: 2px solid; */
   justify-content: flex-end;
-  /* flex-wrap: wrap-reverse; */
   gap: 1rem;
   flex-wrap: wrap;
   position: absolute;
@@ -114,11 +95,14 @@ select {
 }
 
 @media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
   main {
     height: 100vh;
   }
 
-  .your-cart >h1{
+  .your-cart > h1 {
     font-size: 1rem;
   }
 
@@ -127,7 +111,6 @@ select {
   }
   .checkout {
     position: static;
-    /* display: none; */
     width: fit-content;
     padding: 0.5rem 2rem;
     margin-left: 2rem;
@@ -138,22 +121,20 @@ select {
 
   .item .picking-options {
     position: static;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 40%;
   }
 
   .item {
-    /* max-width: 1000px; */
-    /* margin: 0 auto; */
-    /* border: 2px solid red; */
     align-self: stretch;
   }
 
   .products {
     max-width: 900px;
-    /* border: 2px solid red; */
-    /* align-items: center; */
-    /* align-self: stretch */
+  }
+
+  .product-link {
+    flex: 0.5 1 30%;
   }
 
   .amount {
@@ -161,7 +142,7 @@ select {
     align-items: baseline;
   }
 
-  .your-cart{
+  .your-cart {
     margin: 3vh 0;
   }
 }

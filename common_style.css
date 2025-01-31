@@ -4,17 +4,32 @@ body{
 
 }
 
+html{
+  font-size: 13px;
+}
+
+
+
 .heading{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 1.5rem;
     font-weight: bold;
-    font-size:medium;
+    /* font-size:medium; */
+    font-size: 16px;
 }
 
 .menu-icon{
     display: block;
+}
+
+input,select{
+  appearance: auto;
+}
+
+a,i{
+  cursor: pointer;
 }
 
 nav {
@@ -44,4 +59,4 @@ footer {
     color: white;
   }
 
- 
+
